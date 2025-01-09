@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Игра с космическим кораблем</title>
+    <title>Spaceship Adventure</title>
     <style>
-        
+        html { 
+            background: url(./img/i.webp) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
         canvas {
             padding-left: 0;
             padding-right: 0;
@@ -32,17 +38,22 @@
         }
         #score{
             text-align:center;
+            color: aliceblue;
         }
         #name{
+            color: aliceblue;
             text-align:center;
             margin-left: auto;
             margin-right: auto; 
+        }
+        #gameCanvas{
+            border: 4px solid aliceblue;
         }
 
     </style>
 </head>
 <body>
-    <h1 id="name">Игра с космическим кораблем</h1>
+    <h1 id="name">Spaceship Adventure</h1>
     <canvas id="gameCanvas" width="300" height="500"></canvas>
     <div id="score">Счет: 0</div>
     <div id="gameOverMessage">Игра окончена</div>
