@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра с космическим кораблем</title>
+    <style>
+        
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 1px solid black;
+            background-image: url("./img/background.gif");
+        }
+        #restartButton {
+            display: none; /* Изначально скрываем кнопку */
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #gameOverMessage {
+            display: none; /* Изначально скрываем сообщение об окончании игры */
+            font-size: 30px;
+            color: red;
+            margin-top: 10px;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+        #score{
+            text-align:center;
+        }
+        #name{
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="name">Игра с космическим кораблем</h1>
+    <canvas id="gameCanvas" width="300" height="500"></canvas>
+    <div id="score">Счет: 0</div>
+    <div id="gameOverMessage">Игра окончена</div>
+    <button id="restartButton" onclick="restartGame()">Начать сначала</button>
+    <script src="game.js"></script>
+</body>
+</html>
